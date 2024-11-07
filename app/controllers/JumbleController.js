@@ -32,4 +32,18 @@ export class JumbleController {
   }
 
 
+  createJumble() {
+    event.preventDefault()
+    const formElm = event.target
+    const formData = {
+      name: formElm.name.value,
+
+      body: formElm.body.value
+
+    }
+    jumbleService.createJumble(formData)
+    this.drawJumbleList()
+  }
+
+
 }

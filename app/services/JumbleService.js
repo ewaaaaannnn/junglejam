@@ -8,6 +8,14 @@ class JumbleService {
     AppState.activeJumble = selectedJumble
   }
 
+
+  createJumble(formData) {
+    AppState.jumbles.push(new Jumble(formData))
+  }
+
+
+
+
 }
 
 
