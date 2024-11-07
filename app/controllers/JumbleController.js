@@ -28,6 +28,7 @@ export class JumbleController {
 
   selectActiveJumble(jumbleId) {
     jumbleService.selectActiveJumble(jumbleId)
+    this.drawActiveJumble()
   }
 
 

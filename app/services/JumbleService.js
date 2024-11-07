@@ -3,7 +3,7 @@ import { Jumble } from "../models/Jumble.js";
 
 class JumbleService {
   selectActiveJumble(jumbleId) {
-    const selectedJumble = AppState.jumbles.find(jumble => jumbleId == jumbles.id)
+    const selectedJumble = AppState.jumbles.find(jumble => jumbleId == jumble.id)
     console.log(selectedJumble);
     AppState.activeJumble = selectedJumble
   }
